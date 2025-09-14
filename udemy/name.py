@@ -1,0 +1,5 @@
+name = input("Wie heisst du?:\n")
+age = input("Wie alt bist du?\n")
+grade = input("In welche Klasse gehst du?\n")
+game = input("Was ist deine lieblings Videospiel?\n")
+print("Hi, ",name,".","\nYour Age is " ,age,".", "\nYou are in ",grade,"grade." ,"\nYou like ",game ,".","\n")
