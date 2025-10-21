@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 from decouple import config
@@ -6,17 +5,7 @@ from decouple import config
 GOOGLE_GEMINI_KEY = config("GOOGLE_GEMINI_KEY")
 llm=ChatGoogleGenerativeAI(model="gemini-2.5-flash", google_api_key=GOOGLE_GEMINI_KEY)
 
-# print("Q and A with VOAGPT")
-# print("-------------------")
-# while True:
-#     question=input("Q :")
-#     if question == "exit":
-#         print("Goodbye\nVOAGPT is out")
-#         exit(0)
-#     # print("Q :",question)
-#     response=llm.invoke(question)
-#     print("A :",response.content)
-st.title("ARmaxAI")
+st.title("JestaahhAI")
 
 question = st.text_input("Your Question")
 
