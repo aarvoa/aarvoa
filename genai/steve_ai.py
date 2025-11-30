@@ -22,13 +22,13 @@ def take_command():
     try:
         with sr.Microphone() as source: #with is my manager who will take care of my resource which is my mic
             print("listening...")
-            voice = listener.listen(source=source,phrase_time_limit=10)
+            voice = listener.listen(source=source,phrase_time_limit=30)
             # print(type(voice))
             full_command = listener.recognize_vosk(audio_data=voice,language="en")
             full_command = full_command.lower()
             command = json.loads(full_command)['text']
-            if 'steve' in command:
-                command =  command.replace('steve', '')
+            if 'sunny' in command:
+                command =  command.replace('sunny', '')
                 return command
             if 'exit' in command:
                 print("Tschuss...")
