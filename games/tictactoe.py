@@ -55,7 +55,7 @@ for y in range(3):
 
        if won:
         print('winner is:', name)
-        cursor.text = ''
+        cursor.text = ""
         mouse.visible = True
         Panel(z=1, scale=10, model='quad')
         t = Text(f'player\n{name}\nwon!', scale=3, origin=(0,0), background=True)

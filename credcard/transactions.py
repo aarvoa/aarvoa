@@ -1,0 +1,6 @@
+transactions = {
+    "atlas": [],
+    "fluffy": [],
+    "sundaran": []
+
+}
