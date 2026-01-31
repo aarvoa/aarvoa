@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Network Chat</title>
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .messages {
+            height: 300px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .msg {
+            margin-bottom: 5px;
+        }
+
+        .time {
+            color: #888;
+            font-size: 12px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>💬 Network Chat</h2>
+
+        <div class="messages">
+            {% for msg in messages %}
+            <div class="msg">
+                <strong>{{ msg.username }}</strong>: {{ msg.message }}
+                <span class="time">[{{ msg.timestamp }}]</span>
+            </div>
+            {% endfor %}
+        </div>
+
+        <form method="POST">
+            <input type="text" name="username" placeholder="Your name" required>
+            <input type="text" name="message" placeholder="Type a message" required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
