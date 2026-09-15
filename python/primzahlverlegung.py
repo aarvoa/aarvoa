@@ -1,3 +1,4 @@
+print("welcome to Primzahlverlegung!")
 while True:
     num = int(input("Enter a number!: "))
     div = 2

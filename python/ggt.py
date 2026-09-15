@@ -19,4 +19,4 @@ for i in range(1,small + 1):
         factors.append(i)
 
 print(factors)
-print(factors[-1])
+print(factors[0])
