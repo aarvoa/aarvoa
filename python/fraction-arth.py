@@ -13,8 +13,20 @@ while True:
             new_zah = int(num1_split[0]) - int(num2_split[0])
         else:
             print("Not a valid choice!")
-    else:
-        print("we dont support that yet")
-        continue
 
-    print(str(new_zah) + "/" + num1_split[1])
+        print(str(new_zah) + "/" + num1_split[1])
+        
+    else:
+        zah_num1 = int(num1_split[0]) * int(num2_split[1])
+        zah_num2 = int(num2_split[0]) * int(num1_split[1])
+        nen = int(num1_split[1]) * int(num2_split[1])
+
+        if choice == 1:
+            sum_zah = zah_num1 + zah_num2
+            sum
+            print(str(sum_zah) + "/" + str(nen))
+        elif choice == 2:
+            dif_zah = zah_num1 - zah_num2
+            print(str(dif_zah) + "/" + str(nen))
+
+    
